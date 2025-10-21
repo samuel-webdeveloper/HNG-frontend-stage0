@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Profile Card — Frontend Wizards Stage 0</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- ✅ Official Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcEl6l9FZC+eFJkB9I6VnNQ9xX2IY8+1Y9wCEiYpGkKw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <main>
+    <article class="card" data-testid="test-profile-card" aria-labelledby="name">
+      <header class="card-header">
+        <div class="avatar-area">
+          <figure>
+            <img
+              src="avatar-placeholder.jpg"
+              alt="Profile photo of Samuel Ayoola"
+              id="avatarImg"
+              data-testid="test-user-avatar"
+            />
+            <figcaption class="sr-only">User avatar</figcaption>
+          </figure>
+
+          <!-- File upload for avatar -->
+          <label class="upload-label">
+            <span>Upload avatar</span>
+            <input type="file" id="avatarInput" accept="image/*" />
+          </label>
+        </div>
+
+        <div class="meta">
+          <h2 id="name" data-testid="test-user-name">Samuel Oluwatobi Ayoola</h2>
+          <p class="bio" data-testid="test-user-bio">
+            Passionate frontend developer who enjoys accessible UI and clean code.
+          </p>
+
+          <p class="time-row">
+            Current Time (ms):
+            <strong aria-live="polite" id="time" data-testid="test-user-time"></strong>
+          </p>
+
+          <!-- ✅ Social icons with Font Awesome -->
+          <nav class="social" aria-label="Social links" data-testid="test-user-social-links">
+            <ul>
+              <li>
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">
+                  <img src="images/twitter.jpg">
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">
+                  <img src="images/github.jpg">
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">
+                  <img src="images/linkedin.png">
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section class="lists">
+        <section aria-labelledby="hobbies" class="hobbies">
+          <h3 id="hobbies">Hobbies</h3>
+          <ul data-testid="test-user-hobbies">
+            <li>Coding</li>
+            <li>Reading</li>
+            <li>Football</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="dislikes" class="dislikes">
+          <h3 id="dislikes">Dislikes</h3>
+          <ul data-testid="test-user-dislikes">
+            <li>Procrastination</li>
+            <li>Spammy UI</li>
+          </ul>
+        </section>
+      </section>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -3,7 +3,7 @@
 Simple accessible profile card built with HTML, CSS, and vanilla JavaScript.
 
 ## Live demo
-(put your Netlify or GitHub Pages link here)
+https://stage0-profilecard.netlify.app/
 
 ## How to run locally
 1. Clone the repo.

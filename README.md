@@ -8,8 +8,6 @@ https://stage0-profilecard.netlify.app/
 ## How to run locally
 1. Clone the repo.
 2. Open `index.html` in a browser.
-   - Or run a local server:
-     - `python -m http.server 8000` then open `http://localhost:8000`.
 
 ## What it includes
 - Required `data-testid` attributes:
